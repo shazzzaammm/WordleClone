@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Array Sorting Alg Visualizer!</title>
+  </head>
+
+  <body>
+    <h1>Sort.</h1>
+    <div class="container"></div>
+    <div class="">
+      <div class="option">
+        <span>Length</span>
+        <input
+          type="range"
+          class="length-slider slider"
+          max="3000"
+          min="2"
+          value="10"
+        />
+      </div>
+      <div class="option">
+        <span>Speed</span>
+        <input
+          type="range"
+          class="speed-slider slider"
+          max="200"
+          min="1"
+          value="10"
+          step="5"
+        />
+      </div>
+      <div class="option">
+        <span>Volume</span>
+        <input
+          type="range"
+          class="volume-slider slider"
+          max=".05"
+          min="0"
+          value=".005"
+          step=".001"
+        />
+      </div>
+      <select name="" class="method-selector">
+        <option value="bogo">bozo</option>
+        <option value="bubble">bubble</option>
+        <option value="brick">brick</option>
+        <option value="cocktailShaker">cocktail</option>
+        <option value="comb">comb</option>
+        <option value="gnome">gnome</option>
+        <option value="insertion">insertion</option>
+        <option value="quick" selected="true">quick</option>
+        <option value="selection">selection</option>
+        <option value="shell">shell</option>
+      </select>
+      <button class="init">init</button>
+      <button class="play-button">play</button>
+      <input type="checkbox" name="" class="repeat-checkbox" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
