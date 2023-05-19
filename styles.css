@@ -1,0 +1,17 @@
+.container {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: #e5e5e5;
+}
+
+.bar {
+    background-color: white;
+}
