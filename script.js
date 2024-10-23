@@ -12995,6 +12995,7 @@ function init() {
   document.getElementById("board").innerHTML = "";
   document.getElementById("keyboard").innerHTML = "";
   document.querySelector(".play-again").classList.add("hidden-button");
+  document.querySelector(".play-again").blur();
   //create board
   for (let r = 0; r < height; r++) {
     for (let c = 0; c < width; c++) {
