@@ -7,7 +7,7 @@ body {
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
@@ -33,11 +33,11 @@ hr {
 }
 
 .tile {
-    border: 2px solid grey;
+    border: 2px solid #333;
     width: 60px;
     height: 60px;
     margin: 2.5px;
-    border-radius: 8px;
+    border-radius: 2px;
     color: white;
     font-weight: 800;
     display: flex;
@@ -47,22 +47,24 @@ hr {
     text-transform: capitalize;
 }
 
+
 .correct {
     background-color: #6aaa64;
-    color: white;
-    border-color: white;
+    border-color: #6aaa64;
 }
 
 .present {
     background-color: #c9b458;
-    color: white;
-    border-color: white;
+    border-color: #c9b458;
 }
 
-.absent {
-    background-color: #787c7e;
-    color: white;
-    border-color: white;
+.absent{
+    background-color: #353535;
+    border-color: #353535;
+}
+
+.untouched{
+    background-color: #999;
 }
 
 .keyboard-row {
@@ -70,6 +72,7 @@ hr {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .key-tile {
@@ -104,7 +107,7 @@ hr {
 
 .play-again {
     background-color: transparent;
-    color: white;
+    color: #6aaa64;
     font-weight: 800;
     margin: 1em auto;
     border: none;
@@ -112,7 +115,7 @@ hr {
 }
 
 .play-again:hover {
-    color: #6aaa64;
+    color: white;
 }
 
 .hidden-button {
