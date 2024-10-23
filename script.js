@@ -31,19 +31,7 @@ function init() {
   //create keyboard
   let keyboard = [
     ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
-    [
-      "A",
-      "S",
-      "D",
-      "F",
-      "G",
-      "H",
-      "J",
-      "K",
-      "L",
-      // '<img src="spider_icon.png" alt="">',
-      
-    ],
+    ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
     ["Enter", "Z", "X", "C", "V", "B", "N", "M", "⌫"],
   ];
   for (let i = 0; i < keyboard.length; i++) {
@@ -79,8 +67,7 @@ function init() {
   // Listen for keys
   document.addEventListener("keyup", processInput);
   //Set variables
-  word = "GOOFY".toUpperCase();
-  // word = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
+  word = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
   gameOver = false;
   row = 0;
   column = 0;
@@ -119,7 +106,7 @@ function processInput(e) {
     let playButton = document.querySelector(".play-again");
     playButton.classList.remove("hidden-button");
     playButton.addEventListener("click", init);
-    playButton.focus()
+    playButton.focus();
   }
 }
 
@@ -154,7 +141,7 @@ function Update() {
       letterCount[letter] = 1;
     }
   }
-  
+
   //check correct
   for (let c = 0; c < width; c++) {
     let currentTile = document.getElementById(
@@ -171,7 +158,7 @@ function Update() {
       letterCount[letter]--;
     }
   }
-  
+
   //check present in wrong place
   for (let c = 0; c < width; c++) {
     let currentTile = document.getElementById(
@@ -196,7 +183,7 @@ function Update() {
     let playButton = document.querySelector(".play-again");
     playButton.classList.remove("hidden-button");
     playButton.addEventListener("click", init);
-    playButton.focus()
+    playButton.focus();
     gameOver = true;
   }
   row++;
